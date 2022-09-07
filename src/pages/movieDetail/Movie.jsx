@@ -27,6 +27,7 @@ const Movie = () => {
           src={`https://image.tmdb.org/t/p/original${
             currentMovieDetail ? currentMovieDetail.backdrop_path : ""
           }`}
+          alt=""
         />
       </div>
       <div className="movie__detail">
@@ -37,6 +38,7 @@ const Movie = () => {
               src={`https://image.tmdb.org/t/p/original${
                 currentMovieDetail ? currentMovieDetail.poster_path : ""
               }`}
+              alt=""
             />
           </div>
         </div>
@@ -125,6 +127,7 @@ const Movie = () => {
                     src={
                       "https://image.tmdb.org/t/p/original" + company.logo_path
                     }
+                    alt=""
                   />
                   <span>{company.name}</span>
                 </span>
